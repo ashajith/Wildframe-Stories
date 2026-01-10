@@ -1,0 +1,314 @@
+/* NAVBAR (TABLET & MOBILE) */
+
+@media (max-width: 1200px) {
+  .cmpad {
+    padding-left: 60px;
+    padding-right: 80px;
+  }
+
+  .navbar-nav {
+    gap: 16px;
+    margin-left: 30px;
+  }
+
+  .nav-link {
+    margin-top: -40px;
+    font-size: 0.9rem;
+  }
+
+  .banner-nav a {
+    margin-top: -55px;
+    margin-left: 16px;
+  }
+
+  .logo {
+    height: 110px;
+  }
+}
+
+/* Tablets (≤ 992px) */
+
+@media (max-width: 992px) {
+  .cmpad {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  /* RESET NEGATIVE MARGINS */
+  .nav-link {
+    margin-top: 0;
+  }
+
+  .banner-nav a {
+    margin-top: 0;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .logo {
+    height: 95px;
+  }
+}
+
+
+/* MOBILE (≤ 768px) */
+
+/* Fix navbar overlay */
+@media (max-width: 768px) {
+  .menubar {
+    position: absolute;
+    background: transparent;
+
+  }
+
+  .cmpad {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* Bootstrap collapse menu */
+  .navbar-collapse {
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+  }
+
+  /* Social icons under menu */
+  .banner-nav {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .banner-nav a {
+    margin-left: 12px;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  /* About Me Section */
+  .call-action-content {
+    white-space: normal;
+    font-size: 36px;
+  }
+
+  .call-to-action {
+    background-position: center;
+  }
+
+
+  /* Blog Cards */
+  .blog-section {
+    margin-top: 0;
+  }
+
+  .blog-container {
+    padding: 40px 20px;
+    grid-template-columns: 1fr;   /* single column */
+    gap: 60px;
+  }
+
+  .blog-card {
+    max-width: 100%;
+  }
+
+  .blog-img {
+    height: 240px;
+    top: 0;                /* remove overlap */
+  }
+
+  .blog-content {
+    margin-top: 0;
+    padding: 20px;
+  }
+
+  .blog-content h3 {
+    font-size: 1.15rem;
+  }
+
+  .blog-content p {
+    font-size: 0.9rem;
+  }
+
+  .read-more {
+    font-size: 0.7rem;
+    letter-spacing: 1.5px;
+  }
+
+  .blog-pagination {
+    margin-top: 50px;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 50px 20px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    /* text-align: left; */
+    gap: 36px;
+  }
+
+  .footer-brand-wrap {
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 50px;
+  }
+
+  /* Contact & Other lists centered */
+  .footer-contact {
+    order: 4;
+    text-align: left;
+  }
+
+  .footer-contact li{
+    justify-content: flex-start;
+  }
+
+  /* Other Info */
+  .footer-other {
+    order: 3;
+    text-align: left;
+  }
+  
+  .footer-other li {
+    justify-content: left;
+  }
+
+  /* Explore */
+  .footer-links {
+    order: 2;
+    text-align: left;
+  }
+
+  /* Social icons centered */
+  .footer-social {
+    order: 5;
+    text-align: left;
+  }
+  
+  .footer-icons {
+    justify-content: left;
+  }
+
+}
+
+/*  SMALL MOBILE (≤ 480px)  */
+@media (max-width: 480px) {
+  .cmpad {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .nav-link {
+    font-size: 0.85rem;
+  }
+
+  .banner-nav a {
+    margin-left: 10px;
+  }
+
+  .logo {
+    height: 70px;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+
+  /* Blog Cards */
+  .blog-container {
+    padding: 30px 16px;
+  }
+
+  .blog-img {
+    height: 200px;
+  }
+
+  .blog-date {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .blog-content h3 {
+    font-size: 1.05rem;
+  }
+
+  .blog-content p {
+    font-size: 0.88rem;
+  }
+
+  /* Footer */
+  .footer-brand h3 {
+    font-size: 1.15rem;
+  }
+
+  .footer-brand p {
+    font-size: 0.9rem;
+  }
+
+  .site-footer h4 {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+    .blog-container {
+        padding-left: 60px;
+        padding-right: 60px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-card {
+        max-width: 100%;
+    }
+
+    .blog-img {
+        height: 280px;
+        top: -70px;
+    }
+
+    .blog-content {
+        margin-top: -50px;
+        padding: 22px;
+    }
+    
+    
+    /* Footer */
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .footer-brand-wrap {
+        grid-column: 1 / -1;
+    }
+}
+

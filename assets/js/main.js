@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     next.classList.add("active");
 
     index++;
-  }, 5000); // change every 5s
+  }, 3000); // change every 5s
 });
 
 

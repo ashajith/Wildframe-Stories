@@ -128,12 +128,38 @@ body {
   }
   
   /* About */
+  .hero {
+    justify-content: center;
+    padding: 0 1.5rem;
+    background-position: center top;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.85) 40%,
+      rgba(0, 0, 0, 0.4) 70%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+
+  .hero-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
   .hero-content h1 {
-    letter-spacing: 1px;
+    font-size: 2.4rem;
   }
 
   .hero-content p {
     font-size: 0.9rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .hero-signature {
+    margin: 1.5rem auto 2rem;
+    display: block;
   }
 
   /* Footer */
@@ -263,5 +289,24 @@ body {
 
   .history-content {
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1600px) {
+  .hero {
+    padding-right: 12%;
+  }
+
+  .hero-content {
+    max-width: 580px;
+  }
+
+  .hero-content h1 {
+    font-size: 4.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+    line-height: 1.9;
   }
 }
